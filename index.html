@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock">
+        <div class="clock-container">
+            <div class="timezone-selector">
+                <select id="timezone-select">
+                    <option value="UTC">UTC (GMT)</option>
+                    <option value="America/New_York">New York (EST/EDT)</option>
+                    <option value="Europe/London">London (GMT/BST)</option>
+                    <option value="Asia/Dubai">Dubai (GST)</option>
+                    <option value="Asia/Tokyo">Tokyo (JST)</option>
+                    <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
+                    <option value="Europe/Paris">Paris (CET/CEST)</option>
+                    <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+                    <option value="Asia/Hong_Kong">Hong Kong (HKT)</option>
+                    <option value="Asia/Seoul">Seoul (KST)</option>
+                    <option value="Asia/Jakarta">Jakarta (WIB)</option>
+                    <option value="Asia/Kolkata">Kolkata (IST)</option>
+                    <option value="Asia/Tehran">Tehran (IRST)</option>
+                    <!-- <option value="UAE/Abu Dhabi">Abu Dhabi (GST)</option> -->
+                    <option value="Africa/Casablanca">Casablanca (WET)</option>
+                    <option value="America/Sao_Paulo">Sao Paulo (BRT)</option>
+                    <option value="America/Mexico_City">Mexico City (CST)</option>
+                    <!---<option value="Russia/Moscow">Moscow (MSK)</option>-->
+                    <option value="Europe/Berlin">Berlin (CEST)</option>
+                </select>
+            </div>
+            <h2 id="day">Day</h2>
+            <div>
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
